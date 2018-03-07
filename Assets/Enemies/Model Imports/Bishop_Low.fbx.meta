@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: 873abe9c4a5dc9a48b3592e59a5653d1
+timeCreated: 1520462572
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Base_Low
+    100002: //RootNode
+    100004: Chest_Low
+    100006: EyeL_Low
+    100008: EyeR_Low
+    100010: Hand_Low
+    100012: Helmet_Low
+    100014: NeckPiece_Low
+    100016: Shoulder_Low
+    100018: ShoulderPlateL_Low
+    100020: ShoulderPlateR_Low
+    100022: Sword_Low
+    100024: Wrist_Low
+    400000: Base_Low
+    400002: //RootNode
+    400004: Chest_Low
+    400006: EyeL_Low
+    400008: EyeR_Low
+    400010: Hand_Low
+    400012: Helmet_Low
+    400014: NeckPiece_Low
+    400016: Shoulder_Low
+    400018: ShoulderPlateL_Low
+    400020: ShoulderPlateR_Low
+    400022: Sword_Low
+    400024: Wrist_Low
+    2300000: Base_Low
+    2300002: Chest_Low
+    2300004: EyeL_Low
+    2300006: EyeR_Low
+    2300008: Hand_Low
+    2300010: Helmet_Low
+    2300012: NeckPiece_Low
+    2300014: Shoulder_Low
+    2300016: ShoulderPlateL_Low
+    2300018: ShoulderPlateR_Low
+    2300020: Sword_Low
+    2300022: Wrist_Low
+    3300000: Base_Low
+    3300002: Chest_Low
+    3300004: EyeL_Low
+    3300006: EyeR_Low
+    3300008: Hand_Low
+    3300010: Helmet_Low
+    3300012: NeckPiece_Low
+    3300014: Shoulder_Low
+    3300016: ShoulderPlateL_Low
+    3300018: ShoulderPlateR_Low
+    3300020: Sword_Low
+    3300022: Wrist_Low
+    4300000: Hand_Low
+    4300002: Shoulder_Low
+    4300004: NeckPiece_Low
+    4300006: ShoulderPlateR_Low
+    4300008: ShoulderPlateL_Low
+    4300010: Wrist_Low
+    4300012: Helmet_Low
+    4300014: Chest_Low
+    4300016: EyeR_Low
+    4300018: EyeL_Low
+    4300020: Sword_Low
+    4300022: Base_Low
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
