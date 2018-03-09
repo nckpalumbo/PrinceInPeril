@@ -37,9 +37,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1868117320410552}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -429.998, y: 258.92792, z: -360.574}
-  m_LocalScale: {x: 1.1, y: 1.1000005, z: 0.10000005}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 148.837, y: -9.78, z: 5.684}
+  m_LocalScale: {x: 2.5, y: 1.7, z: 0.10000011}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -126,4 +126,4 @@ MonoBehaviour:
   currEnemy: {fileID: 0}
   playerObj: {fileID: 0}
   cover: {fileID: 0}
-  hitWithBat: 0
+  bat: {fileID: 0}
