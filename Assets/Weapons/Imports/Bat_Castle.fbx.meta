@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 4f1ad09922b4e0241b0c1c48fbb33327
+timeCreated: 1521401301
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Ball_Low
+    100002: //RootNode
+    100004: Handle_Low
+    100006: Spike010_Low
+    100008: Spike011_Low
+    100010: Spike012_Low
+    100012: Spike013_Low
+    100014: Spike014_Low
+    100016: Spike015_Low
+    100018: Spike016_Low
+    100020: Spike017_Low
+    100022: Spike018_Low
+    100024: Spike01_Low
+    100026: Spike02_Low
+    100028: Spike03_Low
+    100030: Spike04_Low
+    100032: Spike06_Low
+    100034: Spike07_Low
+    100036: Spike08_Low
+    100038: Spike09_Low
+    400000: Ball_Low
+    400002: //RootNode
+    400004: Handle_Low
+    400006: Spike010_Low
+    400008: Spike011_Low
+    400010: Spike012_Low
+    400012: Spike013_Low
+    400014: Spike014_Low
+    400016: Spike015_Low
+    400018: Spike016_Low
+    400020: Spike017_Low
+    400022: Spike018_Low
+    400024: Spike01_Low
+    400026: Spike02_Low
+    400028: Spike03_Low
+    400030: Spike04_Low
+    400032: Spike06_Low
+    400034: Spike07_Low
+    400036: Spike08_Low
+    400038: Spike09_Low
+    2300000: Ball_Low
+    2300002: Handle_Low
+    2300004: Spike010_Low
+    2300006: Spike011_Low
+    2300008: Spike012_Low
+    2300010: Spike013_Low
+    2300012: Spike014_Low
+    2300014: Spike015_Low
+    2300016: Spike016_Low
+    2300018: Spike017_Low
+    2300020: Spike018_Low
+    2300022: Spike01_Low
+    2300024: Spike02_Low
+    2300026: Spike03_Low
+    2300028: Spike04_Low
+    2300030: Spike06_Low
+    2300032: Spike07_Low
+    2300034: Spike08_Low
+    2300036: Spike09_Low
+    3300000: Ball_Low
+    3300002: Handle_Low
+    3300004: Spike010_Low
+    3300006: Spike011_Low
+    3300008: Spike012_Low
+    3300010: Spike013_Low
+    3300012: Spike014_Low
+    3300014: Spike015_Low
+    3300016: Spike016_Low
+    3300018: Spike017_Low
+    3300020: Spike018_Low
+    3300022: Spike01_Low
+    3300024: Spike02_Low
+    3300026: Spike03_Low
+    3300028: Spike04_Low
+    3300030: Spike06_Low
+    3300032: Spike07_Low
+    3300034: Spike08_Low
+    3300036: Spike09_Low
+    4300000: Spike01_Low
+    4300002: Spike09_Low
+    4300004: Spike010_Low
+    4300006: Spike011_Low
+    4300008: Spike015_Low
+    4300010: Spike016_Low
+    4300012: Spike017_Low
+    4300014: Spike018_Low
+    4300016: Spike08_Low
+    4300018: Spike07_Low
+    4300020: Spike06_Low
+    4300022: Spike04_Low
+    4300024: Spike03_Low
+    4300026: Spike02_Low
+    4300028: Spike013_Low
+    4300030: Spike012_Low
+    4300032: Spike014_Low
+    4300034: Ball_Low
+    4300036: Handle_Low
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CastleBat_Material
+    second: {fileID: 2100000, guid: 64c53f67fd0f6c44c9d4a17d30b60f21, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
