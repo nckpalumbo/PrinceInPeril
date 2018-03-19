@@ -60,7 +60,7 @@ public class enemyScript : MonoBehaviour {
             if (isGrounded)
             {
                 currEnemy.transform.position = new Vector3(xVal, yVal, zVal);
-                //isHit();
+                isHit();
             }
             if (goLeft)
                 moveLeft();
@@ -81,7 +81,7 @@ public class enemyScript : MonoBehaviour {
             if(isGrounded)
             {
                 determinePathing();
-                //isHit();
+                isHit();
             }
         }
 	}
@@ -162,14 +162,14 @@ public class enemyScript : MonoBehaviour {
         }
     }
 
-    /*void isHit()
+    void isHit()
     {
         if(hitWithBat)
         {
             isGrounded = false;
             hitWithBat = false;
         }
-    }*/
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -180,7 +180,7 @@ public class enemyScript : MonoBehaviour {
                 float force = 50;
                 Vector3 direction = collision.contacts[0].point - this.gameObject.transform.position;
                 direction = -direction.normalized;
-                this.gameObject.GetComponent<Rigidbody>().AddForce(direction * force);
+                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * force, 0, direction.z * force, ForceMode.Impulse);
                 hitWithBat = true;
                 Debug.Log("hit by bat");
             }
