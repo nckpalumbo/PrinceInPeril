@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 382fb39cc2a2b30429c943f3595887f3
+timeCreated: 1521337636
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: KnightBase_Low
+    100004: KnightCollar_Low
+    100006: KnightHead_Low
+    100008: KnightHelmet_Low
+    100010: KnightHindge_Low
+    100012: KnightPt01_Low
+    100014: KnightPt02_Low
+    100016: KnightVisor_Low
+    100018: Left_Eye
+    100020: Right_Eye
+    400000: //RootNode
+    400002: KnightBase_Low
+    400004: KnightCollar_Low
+    400006: KnightHead_Low
+    400008: KnightHelmet_Low
+    400010: KnightHindge_Low
+    400012: KnightPt01_Low
+    400014: KnightPt02_Low
+    400016: KnightVisor_Low
+    400018: Left_Eye
+    400020: Right_Eye
+    2300000: KnightBase_Low
+    2300002: KnightCollar_Low
+    2300004: KnightHead_Low
+    2300006: KnightHelmet_Low
+    2300008: KnightHindge_Low
+    2300010: KnightPt01_Low
+    2300012: KnightPt02_Low
+    2300014: KnightVisor_Low
+    2300016: Left_Eye
+    2300018: Right_Eye
+    3300000: KnightBase_Low
+    3300002: KnightCollar_Low
+    3300004: KnightHead_Low
+    3300006: KnightHelmet_Low
+    3300008: KnightHindge_Low
+    3300010: KnightPt01_Low
+    3300012: KnightPt02_Low
+    3300014: KnightVisor_Low
+    3300016: Left_Eye
+    3300018: Right_Eye
+    4300000: KnightHead_Low
+    4300002: KnightPt02_Low
+    4300004: KnightPt01_Low
+    4300006: KnightBase_Low
+    4300008: KnightVisor_Low
+    4300010: KnightHelmet_Low
+    4300012: KnightHindge_Low
+    4300014: Right_Eye
+    4300016: Left_Eye
+    4300018: KnightCollar_Low
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knight_Material
+    second: {fileID: 2100000, guid: b386b410df68894418306840f5465336, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

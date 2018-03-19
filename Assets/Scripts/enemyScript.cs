@@ -10,7 +10,7 @@ public class enemyScript : MonoBehaviour {
     public GameObject cover;
     public GameObject bat;
 
-    private int moveSpeed;
+    private float moveSpeed;
     private float xVal;
     private float yVal;
     private float zVal;
@@ -28,7 +28,7 @@ public class enemyScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         currEnemy = this.gameObject;
-        moveSpeed = 5;
+        moveSpeed = 4.0f;
         startXVal = currEnemy.transform.position.x;
         startYVal = currEnemy.transform.position.y;
         startZVal = currEnemy.transform.position.z;
@@ -45,7 +45,7 @@ public class enemyScript : MonoBehaviour {
 
         if(currEnemy.gameObject.tag == "tallEnemy")
         {
-            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 1.85f, startZVal), Quaternion.Euler(90, 0, 0));
+            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(90, 0, 0));
             
         }
         determinePathZ();
@@ -88,22 +88,21 @@ public class enemyScript : MonoBehaviour {
 
     void moveLeft()
     {
-        zVal += 2f * Time.deltaTime;
+        zVal += moveSpeed * Time.deltaTime;
     }
 
     void moveRight()
     {
-        zVal -= 2f * Time.deltaTime;
+        zVal -= moveSpeed * Time.deltaTime;
     }
 
     void popUp()
     {
-        yVal += 1.5f * Time.deltaTime;
+        yVal += 1.8f * Time.deltaTime;
     }
-
     void popDown()
     {
-        yVal -= 1.5f * Time.deltaTime;
+        yVal -= 1.8f * Time.deltaTime;
     }
     void determinePathZ()
     {
@@ -126,7 +125,7 @@ public class enemyScript : MonoBehaviour {
                 goDown = false;
                 goUp = true;
             }
-            else if (yVal >= startYVal + 3.5)
+            else if (yVal >= startYVal + 4.75)
             {
                 goUp = false;
                 goDown = true;
@@ -136,7 +135,7 @@ public class enemyScript : MonoBehaviour {
         {
             if (goUp)
             {
-                if (yVal >= startYVal + 3.5)
+                if (yVal >= startYVal + 4.75)
                 {
                     goUp = false;
                     goDown = true;
@@ -171,16 +170,17 @@ public class enemyScript : MonoBehaviour {
             hitWithBat = false;
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (this.gameObject.tag == "shortEnemy" || this.gameObject.tag == "mediumEnemy")
         {
             if (collision.gameObject.tag == "bat")
             {
-                //float force = 50;
-                //Vector3 direction = collision.contacts[0].point - this.gameObject.transform.position;
-                //direction = -direction.normalized;
-                //this.gameObject.GetComponent<Rigidbody>().AddForce(direction * force);
+                float force = 50;
+                Vector3 direction = collision.contacts[0].point - this.gameObject.transform.position;
+                direction = -direction.normalized;
+                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * force, 0, direction.z * force, ForceMode.Impulse);
                 hitWithBat = true;
                 Debug.Log("hit by bat");
             }
