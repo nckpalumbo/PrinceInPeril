@@ -405,7 +405,7 @@ public class OVRPlayerController : MonoBehaviour
 
         MoveThrottle += (JumpForce * 0.9f) * Vector3.up;
 
-		return true;
+        return true;
 	}
 
 	/// <summary>
