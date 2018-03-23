@@ -1139,7 +1139,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4230933477535678, guid: 3d6178635e527d34a9c078a0539e11be, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4230933477535678, guid: 3d6178635e527d34a9c078a0539e11be, type: 2}
       propertyPath: m_LocalScale.z
@@ -4756,31 +4756,6 @@ Prefab:
       propertyPath: endLevel
       value: 
       objectReference: {fileID: 1929144740}
-    - target: {fileID: 23956291233374336, guid: 669dd859c02e1ba4d8b0b36b397334c0,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
-        type: 2}
-      propertyPath: JumpForce
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
-        type: 2}
-      propertyPath: Acceleration
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
-        type: 2}
-      propertyPath: GravityModifier
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
-        type: 2}
-      propertyPath: Damping
-      value: 0.3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 669dd859c02e1ba4d8b0b36b397334c0, type: 2}
   m_IsPrefabParent: 0

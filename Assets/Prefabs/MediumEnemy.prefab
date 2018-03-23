@@ -124,5 +124,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currEnemy: {fileID: 0}
-  playerObj: {fileID: 0}
-  hitWithBat: 0
+  playerObj: {fileID: 1222887283361126, guid: 669dd859c02e1ba4d8b0b36b397334c0, type: 2}
+  cover: {fileID: 0}
+  bat: {fileID: 1918014323338302, guid: 5e67fc5b1fd0dc94093d7b6b1d4f2e57, type: 2}
