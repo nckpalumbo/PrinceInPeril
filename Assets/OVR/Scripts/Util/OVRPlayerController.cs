@@ -403,7 +403,7 @@ public class OVRPlayerController : MonoBehaviour
 		if (!Controller.isGrounded)
 			return false;
 
-        MoveThrottle += new Vector3(0, transform.lossyScale.y * (JumpForce/2), 0);
+        MoveThrottle += (JumpForce * 0.9f) * Vector3.up;
 
 		return true;
 	}
@@ -502,5 +502,10 @@ public class OVRPlayerController : MonoBehaviour
 			transform.rotation = Quaternion.Euler(euler);
 		}
 	}
+
+    public Vector3 getSwingVelocity()
+    {
+        return OVRInput.GetLocalControllerAngularVelocity(OVRInput.Controller.RTouch);
+    }
 }
 

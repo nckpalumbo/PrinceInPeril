@@ -177,10 +177,11 @@ public class enemyScript : MonoBehaviour {
         {
             if (collision.gameObject.tag == "bat")
             {
-                float force = 50;
+                //float force = 50;
+                Vector3 force = ovrScript.getSwingVelocity();
                 Vector3 direction = collision.contacts[0].point - this.gameObject.transform.position;
                 direction = -direction.normalized;
-                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * force, 0, direction.z * force, ForceMode.Impulse);
+                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * force.x, 0, direction.z * force.z, ForceMode.Impulse);
                 hitWithBat = true;
                 Debug.Log("hit by bat");
             }
