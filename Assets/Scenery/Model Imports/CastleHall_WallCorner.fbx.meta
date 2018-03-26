@@ -1,71 +1,58 @@
 fileFormatVersion: 2
-guid: 49f8f5904f7a5f04383dee3c7ccc19bf
-timeCreated: 1520476467
+guid: b938af6be0f5876409742280252de324
+timeCreated: 1522023183
 licenseType: Free
 ModelImporter:
-  serializedVersion: 21
+  serializedVersion: 22
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: CeilingArch01_Low
-    100004: CeilingCenter_Low
-    100006: CeilingCrossArch01_Low
-    100008: CeilingCrossArch02_Low
-    100010: CeilingPiece01_Low
-    100012: CeilingPiece02_Low
-    100014: CeilingPiece03_Low
-    100016: CeilingPiece04_Low
-    100018: Colomns_Low
-    100020: WallBlank_Low
-    100022: WallBlank_Low1
-    400000: //RootNode
-    400002: CeilingArch01_Low
-    400004: CeilingCenter_Low
-    400006: CeilingCrossArch01_Low
-    400008: CeilingCrossArch02_Low
-    400010: CeilingPiece01_Low
-    400012: CeilingPiece02_Low
-    400014: CeilingPiece03_Low
-    400016: CeilingPiece04_Low
-    400018: Colomns_Low
-    400020: WallBlank_Low
-    400022: WallBlank_Low1
-    2300000: CeilingArch01_Low
-    2300002: CeilingCenter_Low
-    2300004: CeilingCrossArch01_Low
-    2300006: CeilingCrossArch02_Low
-    2300008: CeilingPiece01_Low
-    2300010: CeilingPiece02_Low
-    2300012: CeilingPiece03_Low
-    2300014: CeilingPiece04_Low
-    2300016: Colomns_Low
-    2300018: WallBlank_Low
-    2300020: WallBlank_Low1
-    3300000: CeilingArch01_Low
-    3300002: CeilingCenter_Low
-    3300004: CeilingCrossArch01_Low
-    3300006: CeilingCrossArch02_Low
-    3300008: CeilingPiece01_Low
-    3300010: CeilingPiece02_Low
-    3300012: CeilingPiece03_Low
-    3300014: CeilingPiece04_Low
-    3300016: Colomns_Low
-    3300018: WallBlank_Low
-    3300020: WallBlank_Low1
-    4300000: CeilingCenter_Low
-    4300002: CeilingPiece04_Low
-    4300004: CeilingPiece03_Low
-    4300006: CeilingPiece02_Low
-    4300008: CeilingPiece01_Low
-    4300010: WallBlank_Low
-    4300012: CeilingCrossArch02_Low
-    4300014: CeilingCrossArch01_Low
-    4300016: CeilingArch01_Low
-    4300018: Colomns_Low
-    4300020: WallBlank_Low1
+    100000: Arch_Top
+    100002: CastleHall_Ceiling
+    100004: CastleHall_Wall_Left
+    100006: CastleHall_Wall_Left1
+    100008: CastleHall_Wall_Right
+    100010: //RootNode
+    100012: Colomn_Left
+    100014: Colomn_Right
+    400000: Arch_Top
+    400002: CastleHall_Ceiling
+    400004: CastleHall_Wall_Left
+    400006: CastleHall_Wall_Left1
+    400008: CastleHall_Wall_Right
+    400010: //RootNode
+    400012: Colomn_Left
+    400014: Colomn_Right
+    2300000: Arch_Top
+    2300002: CastleHall_Ceiling
+    2300004: CastleHall_Wall_Left
+    2300006: CastleHall_Wall_Left1
+    2300008: CastleHall_Wall_Right
+    2300010: Colomn_Left
+    2300012: Colomn_Right
+    3300000: Arch_Top
+    3300002: CastleHall_Ceiling
+    3300004: CastleHall_Wall_Left
+    3300006: CastleHall_Wall_Left1
+    3300008: CastleHall_Wall_Right
+    3300010: Colomn_Left
+    3300012: Colomn_Right
+    4300000: CastleHall_Wall_Right
+    4300002: CastleHall_Wall_Left
+    4300004: CastleHall_Ceiling
+    4300006: CastleHall_Wall_Left1
+    4300008: Arch_Top
+    4300010: Colomn_Right
+    4300012: Colomn_Left
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CastleWall_Material
+    second: {fileID: 2100000, guid: 8f6a04c137b48ab4cac3be95e06ecb6b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
     materialSearch: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -78,6 +65,7 @@ ModelImporter:
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
     animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
