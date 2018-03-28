@@ -28,7 +28,7 @@ public class enemyScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         currEnemy = this.gameObject;
-        moveSpeed = 4.0f;
+        moveSpeed = 5.0f;
         startXVal = currEnemy.transform.position.x;
         startYVal = currEnemy.transform.position.y;
         startZVal = currEnemy.transform.position.z;
@@ -157,25 +157,11 @@ public class enemyScript : MonoBehaviour {
         // determine if enemy should seek the player 
         if (Vector3.Distance(currEnemy.transform.position, playerObj.transform.position) <= 15)
         {
-            //var lookPos = playerObj.transform.position - currEnemy.transform.position;
-            //lookPos.y = 0;
-
-            //currEnemy.transform.forward = (playerObj.transform.position - currEnemy.transform.position).normalized;
-            //var target = new Vector3(playerObj.transform.position.x, playerObj.transform.position.y, playerObj.transform.position.z);
-
-            //transform.LookAt(playerObj.transform);
-            
-
             var lookDir = playerObj.transform.position - currEnemy.transform.position;
             lookDir.y = 0f; 
 
             currEnemy.transform.rotation = Quaternion.LookRotation(lookDir, Vector3.up);
-            currEnemy.transform.position += (transform.forward) * 2.5f * Time.deltaTime;
-            
-
-            //currEnemy.transform.position += lookPos * 0.5f * Time.deltaTime;
-
-            //currEnemy.transform.position = new Vector3(currEnemy.transform.position.x + currEnemy.transform.forward.x * moveSpeed * Time.deltaTime, currEnemy.transform.position.y, currEnemy.transform.position.z + currEnemy.transform.forward.z * moveSpeed * Time.deltaTime);
+            currEnemy.transform.position += (transform.forward) * moveSpeed * Time.deltaTime;
         }
     }
 
@@ -194,11 +180,10 @@ public class enemyScript : MonoBehaviour {
         {
             if (collision.gameObject.tag == "bat")
             {
-                //float force = 50;
                 Vector3 force = ovrScript.getSwingVelocity();
                 Vector3 direction = collision.contacts[0].point - this.gameObject.transform.position;
                 direction = -direction.normalized;
-                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * force.x, 0, direction.z * force.z, ForceMode.Impulse);
+                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * (force.x + 10), direction.y * force.y, direction.z * (force.z + 10), ForceMode.Impulse);
                 //hitWithBat = true;
                 Debug.Log("hit by bat");
             }
@@ -228,7 +213,6 @@ public class enemyScript : MonoBehaviour {
         if(other.gameObject.tag == "platform")
         {
             isGrounded = false;
-            //Debug.Log("not on platform");
         }
             
     }
@@ -240,30 +224,6 @@ public class enemyScript : MonoBehaviour {
             goLeft = !goLeft;
             goRight = !goRight;
         }
-
-        /*if (this.gameObject.tag == "shortEnemy" || this.gameObject.tag == "mediumEnemy")
-        {
-            if (other.gameObject.tag == "bat")
-            {
-                Destroy(currEnemy);
-                hitWithBat = true;
-                Debug.Log("hit by bat");
-            }
-            else if (other.gameObject.tag == "Player")
-            {
-                Debug.Log("hit by " + other.gameObject.tag);
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-            }
-        }
-
-        else if (this.gameObject.tag == "tallEnemy")
-        {
-            if (other.gameObject.tag == "Player")
-            {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
-        }*/
     }
 
 }

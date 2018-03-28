@@ -505,7 +505,7 @@ public class OVRPlayerController : MonoBehaviour
 
     public Vector3 getSwingVelocity()
     {
-        return OVRInput.GetLocalControllerAngularVelocity(OVRInput.Controller.RTouch);
+        return OVRInput.GetLocalControllerVelocity(OVRInput.Controller.RTouch);
     }
 }
 
