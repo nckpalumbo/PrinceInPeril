@@ -98,9 +98,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709411340856938}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.482, z: -16.98}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 240, y: 0.48199987, z: 20.454}
+  m_LocalScale: {x: 1.3367909, y: 1.3367904, z: 1.3367904}
   m_Children:
   - {fileID: 4480826375295622}
   - {fileID: 4759340649178854}
@@ -115,8 +115,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1194573311201416}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.01216, z: 0.0184}
-  m_LocalScale: {x: 0.14666995, y: 0.14666988, z: 0.14666988}
+  m_LocalPosition: {x: 0.0002, y: 0.01106, z: 0.01715}
+  m_LocalScale: {x: 0.18213162, y: 0.18213145, z: 0.18213145}
   m_Children: []
   m_Father: {fileID: 4759340649178854}
   m_RootOrder: 0
@@ -210,7 +210,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1194573311201416}
   serializedVersion: 5
   lengthInSec: 5
-  simulationSpeed: 8
+  simulationSpeed: 10
   stopAction: 0
   looping: 1
   prewarm: 1
@@ -262,7 +262,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 507772880
+  randomSeed: -1925085573
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -658,7 +658,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 20
+    maxNumParticles: 25
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -2890,24 +2890,24 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.7241379, b: 0, a: 0}
-        key1: {r: 1, g: 0.5527383, b: 0.07352942, a: 0.90882355}
+        key1: {r: 1, g: 0.51724136, b: 0, a: 0.90882355}
         key2: {r: 1, g: 0.47586197, b: 0, a: 0}
         key3: {r: 0.19852942, g: 0.19852942, b: 0.19852942, a: 0}
-        key4: {r: 0, g: 0, b: 0, a: 0}
+        key4: {r: 0.19852942, g: 0.19852942, b: 0.19852942, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 5397
         ctime1: 10794
-        ctime2: 26214
-        ctime3: 48188
-        ctime4: 0
+        ctime2: 38936
+        ctime3: 58596
+        ctime4: 65535
         ctime5: 0
         ctime6: 0
         ctime7: 0
         atime0: 0
         atime1: 5590
-        atime2: 54356
+        atime2: 56669
         atime3: 0
         atime4: 0
         atime5: 0

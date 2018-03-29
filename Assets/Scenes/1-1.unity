@@ -2892,10 +2892,6 @@ Prefab:
       propertyPath: m_Name
       value: Torch Particle System (8)
       objectReference: {fileID: 0}
-    - target: {fileID: 4102099161402882, guid: 8d806e351adcae948941c6d976a16914, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8d806e351adcae948941c6d976a16914, type: 2}
   m_IsPrefabParent: 0
