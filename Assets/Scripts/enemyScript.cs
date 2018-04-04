@@ -9,7 +9,7 @@ public class enemyScript : MonoBehaviour {
     public GameObject playerObj;
     public GameObject cover;
     public GameObject bat;
-
+    
     private float moveSpeed;
     private float xVal;
     private float yVal;
@@ -24,6 +24,7 @@ public class enemyScript : MonoBehaviour {
     public bool isGrounded;
     private bool hitWithBat;
     private OVRPlayerController ovrScript;
+    private trapdoorScript tdScript;
 
     // Use this for initialization
     void Start () {
@@ -42,11 +43,10 @@ public class enemyScript : MonoBehaviour {
         hitWithBat = false;
         isGrounded = true;
         ovrScript = playerObj.GetComponent<OVRPlayerController>();
-
         if(currEnemy.gameObject.tag == "tallEnemy")
         {
-            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(90, 0, 0));
-            
+            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(0, 0, 0));
+
         }
         determinePathZ();
         
@@ -118,9 +118,14 @@ public class enemyScript : MonoBehaviour {
         if (Vector3.Distance(currEnemy.transform.position, playerObj.transform.position) <= 20)
         {
             //determine if enemy should move up or down with y value
+            tdScript = cover.GetComponent<trapdoorScript>();
             if (yVal == startYVal)
+            {
+                tdScript.inRange = true;
                 goUp = true;
-            else if (yVal <= startYVal)
+                tdScript.isOpen = true;
+            }
+            else if (yVal <= startYVal + .1f)
             {
                 goDown = false;
                 goUp = true;
@@ -147,6 +152,7 @@ public class enemyScript : MonoBehaviour {
                 {
                     goDown = false;
                     yVal = startYVal;
+                    tdScript.inRange = false;
                 }
             }
         }
