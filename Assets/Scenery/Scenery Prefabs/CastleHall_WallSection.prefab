@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4829477897790936}
   - component: {fileID: 33013667938463730}
   - component: {fileID: 23875222577207586}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CastleHall_Wall_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4279283160846252}
   - component: {fileID: 33386797900376404}
   - component: {fileID: 23082968926383066}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CastleHall_Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4942490993360556}
   - component: {fileID: 33519840148293202}
   - component: {fileID: 23404447022486770}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CastleHall_Wall_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4405332745070608}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CastleHall_WallSection
   m_TagString: Untagged
   m_Icon: {fileID: 0}

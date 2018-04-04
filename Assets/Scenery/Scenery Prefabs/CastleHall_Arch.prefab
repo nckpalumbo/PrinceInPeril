@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4560574438137792}
   - component: {fileID: 33222962052244146}
   - component: {fileID: 23553544570777846}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colomn_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4139187887433596}
   - component: {fileID: 33977542171899326}
   - component: {fileID: 23205440848083934}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Colomn_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4551609434704000}
   - component: {fileID: 33918109063133238}
   - component: {fileID: 23803814293551546}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Arch_Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4749792006620052}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: CastleHall_Arch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,9 +122,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1879037148820822}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -20, y: 0, z: 0}
-  m_LocalScale: {x: 993.15076, y: 848.0961, z: 993.1507}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 65.12001, y: -5.88, z: 20.5}
+  m_LocalScale: {x: 993.15125, y: 848.0961, z: 993.1512}
   m_Children:
   - {fileID: 4551609434704000}
   - {fileID: 4560574438137792}
