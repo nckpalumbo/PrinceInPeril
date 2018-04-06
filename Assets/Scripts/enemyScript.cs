@@ -115,15 +115,14 @@ public class enemyScript : MonoBehaviour {
 
     void determinePathY()
     {
+        tdScript = cover.GetComponent<trapdoorScript>();
         if (Vector3.Distance(currEnemy.transform.position, playerObj.transform.position) <= 20)
         {
+            tdScript.inRange = true;
             //determine if enemy should move up or down with y value
-            tdScript = cover.GetComponent<trapdoorScript>();
             if (yVal == startYVal)
             {
-                tdScript.inRange = true;
                 goUp = true;
-                tdScript.isOpen = true;
             }
             else if (yVal <= startYVal + .1f)
             {
@@ -138,6 +137,7 @@ public class enemyScript : MonoBehaviour {
         }
         else
         {
+            tdScript.inRange = false;
             if (goUp)
             {
                 if (yVal >= startYVal + 4.75)
@@ -152,7 +152,6 @@ public class enemyScript : MonoBehaviour {
                 {
                     goDown = false;
                     yVal = startYVal;
-                    tdScript.inRange = false;
                 }
             }
         }

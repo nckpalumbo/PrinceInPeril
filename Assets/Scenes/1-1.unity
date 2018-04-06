@@ -7750,12 +7750,12 @@ Prefab:
     - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
         type: 2}
       propertyPath: GravityModifier
-      value: 0.3
+      value: 0.28
       objectReference: {fileID: 0}
     - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
         type: 2}
       propertyPath: JumpForce
-      value: 1
+      value: 1.26
       objectReference: {fileID: 0}
     - target: {fileID: 54432351852508752, guid: 669dd859c02e1ba4d8b0b36b397334c0,
         type: 2}
