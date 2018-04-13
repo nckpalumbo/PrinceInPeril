@@ -16,6 +16,8 @@ TagManager:
   - movingPlatformY
   - movingPlatformZ
   - movingPlatform
+  - Portal
+  - trapDoor
   layers:
   - Default
   - TransparentFX

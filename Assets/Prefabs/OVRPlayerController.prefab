@@ -142,6 +142,7 @@ GameObject:
   - component: {fileID: 136244366353213046}
   - component: {fileID: 114964408333082838}
   - component: {fileID: 114971381260448874}
+  - component: {fileID: 95670508548107786}
   m_Layer: 0
   m_Name: OVRPlayerController
   m_TagString: playerMesh
@@ -179,6 +180,7 @@ GameObject:
   - component: {fileID: 136532353227506584}
   - component: {fileID: 23090961159378822}
   - component: {fileID: 54550318437395806}
+  - component: {fileID: 135119981040133658}
   m_Layer: 0
   m_Name: Bat
   m_TagString: bat
@@ -496,6 +498,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4309651611063708}
+  - component: {fileID: 54196580072906570}
+  - component: {fileID: 136229395770313902}
+  - component: {fileID: 135250439397980052}
   m_Layer: 0
   m_Name: Bat_Castle
   m_TagString: Untagged
@@ -751,7 +756,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1222887283361126}
-  m_LocalRotation: {x: 0.000000044703484, y: 0.6427876, z: 0.0000000018626451, w: 0.7660445}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -64.86, y: 2.19, z: -2.38}
   m_LocalScale: {x: 1.1292611, y: 1.3755109, z: 1.4033729}
   m_Children:
@@ -760,7 +765,7 @@ Transform:
   - {fileID: 4277989235981786}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 80, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4480331790231532
 Transform:
   m_ObjectHideFlags: 1
@@ -1967,6 +1972,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1174831321405308}
   m_Mesh: {fileID: 4300026, guid: 4f1ad09922b4e0241b0c1c48fbb33327, type: 3}
+--- !u!54 &54196580072906570
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884928563827140}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
 --- !u!54 &54432351852508752
 Rigidbody:
   m_ObjectHideFlags: 1
@@ -1977,7 +1997,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 0
+  m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 126
@@ -2031,6 +2051,23 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1225978335408488}
   m_Enabled: 1
+--- !u!95 &95670508548107786
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1222887283361126}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cacb8c1160e181643ab581cd2be9fa86, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114087776804316040
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2126,12 +2163,12 @@ MonoBehaviour:
   Acceleration: 0.2
   Damping: 0.3
   BackAndSideDampen: 0.5
-  JumpForce: 3
+  JumpForce: 1.26
   RotationAmount: 1.5
   RotationRatchet: 45
   HmdResetsY: 1
   HmdRotatesY: 1
-  GravityModifier: 0.3
+  GravityModifier: 0.28
   useProfileData: 1
   bat: {fileID: 0}
   swingBat: 0
@@ -2202,6 +2239,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1222887283361126}
   cam: {fileID: 1962558608387510}
+--- !u!135 &135119981040133658
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234005695716578}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Radius: 0.4474959
+  m_Center: {x: 0.0008903365, y: 0.778, z: 0.048113327}
+--- !u!135 &135250439397980052
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884928563827140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.010944535
+  m_Center: {x: 0.00008301258, y: 0.035984047, z: -0.000017466356}
+--- !u!136 &136229395770313902
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884928563827140}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  m_Radius: 0.003
+  m_Height: 0.05
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.011, z: 0}
 --- !u!136 &136244366353213046
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2223,7 +2297,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1234005695716578}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1

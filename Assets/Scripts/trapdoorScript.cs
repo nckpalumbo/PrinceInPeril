@@ -4,36 +4,46 @@ using UnityEngine;
 
 public class trapdoorScript : MonoBehaviour {
 
-    public Animator anim;
+    private Animator anim;
     public bool inRange;
-    public bool isOpen;
+    private GameObject player;
+    private GameObject[] tallEnemy;
+    private int iterator;
 	// Use this for initialization
 	void Start () {
         anim = this.gameObject.GetComponent<Animator>();
-        //anim.runtimeAnimatorController = Resources.Load("../Scenery/Model_Imports/TrapDoor/trapdoorAnimator") as RuntimeAnimatorController;
         inRange = false;
-        isOpen = false;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        player = GameObject.Find("Player");
+        iterator = GameObject.FindGameObjectsWithTag("tallEnemy").Length;
+        Debug.Log(iterator);
+        /*for(int i = 0; i < iterator; i++)
+        {
+            GameObject trapDoor = GameObject.Find("TrapDoor(Clone)");
+            GameObject bishop = GameObject.Find("Bishop (" + (i + 1) + ")");
+            if (!trapDoor.transform.IsChildOf(bishop.transform))
+            {
+                this.gameObject.transform.parent = bishop.transform;
+                break;
+            }
+        }*/
+
+    }
+
+    // Update is called once per frame
+    void Update () {
         //Check if player is in range, if so - anim.setBool("inRange", true)
         //This script should be set to just the trapdoor and utilized as an independent thing
-        //Enemy script can spawn them but this should handle the animation independent of it
         //Should be able to tell it to play Open based on when these variables become true
-        //Open animation currently set to legacy animation type and on 'ping pong' meaning it would just reverse its animation when it's false
 
-        if (inRange && !isOpen)
+        if (Vector3.Distance(this.gameObject.transform.position, player.transform.position) <= 20)
         {
-            anim.SetBool("isOpen", true);
+            anim.SetBool("inRange", true);
+            inRange = true;
         }
-        else if (!inRange && isOpen)
+        else
         {
-            anim.SetBool("isOpen", false);
-        }
-        else if (!inRange && !isOpen)
-        {
-            anim.SetBool("isOpen", false);
+            anim.SetBool("inRange", false);
+            inRange = false;
         }
 	}
 }

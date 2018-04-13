@@ -20,7 +20,7 @@ public class EndLevel : MonoBehaviour
     // Update is called once per frame
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.name == "Portal")
+        if (collision.gameObject.tag == "Portal")
         {
             //Initiate.Fade(world + "-" + (nextLevel+1), UnityEngine.Color.black, 0.75f);
             SceneManager.LoadScene(nextLevel);

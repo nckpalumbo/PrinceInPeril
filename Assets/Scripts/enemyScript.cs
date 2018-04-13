@@ -8,6 +8,7 @@ public class enemyScript : MonoBehaviour {
     public GameObject currEnemy;
     public GameObject playerObj;
     public GameObject cover;
+    public GameObject trapDoor;
     public GameObject bat;
     
     private float moveSpeed;
@@ -25,7 +26,7 @@ public class enemyScript : MonoBehaviour {
     private bool hitWithBat;
     private OVRPlayerController ovrScript;
     private trapdoorScript tdScript;
-
+    private int iterator = 0;
     // Use this for initialization
     void Start () {
         currEnemy = this.gameObject;
@@ -45,8 +46,11 @@ public class enemyScript : MonoBehaviour {
         ovrScript = playerObj.GetComponent<OVRPlayerController>();
         if(currEnemy.gameObject.tag == "tallEnemy")
         {
-            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(0, 0, 0));
-
+            GameObject.Instantiate(trapDoor, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(0, 0, 0));
+            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(90, 0, 0));
+            trapDoor.transform.parent = currEnemy.transform;
+            cover.transform.parent = currEnemy.transform;
+            iterator++;
         }
         determinePathZ();
         
@@ -115,7 +119,7 @@ public class enemyScript : MonoBehaviour {
 
     void determinePathY()
     {
-        tdScript = cover.GetComponent<trapdoorScript>();
+        tdScript = trapDoor.GetComponent<trapdoorScript>();
         if (Vector3.Distance(currEnemy.transform.position, playerObj.transform.position) <= 20)
         {
             tdScript.inRange = true;
@@ -190,13 +194,15 @@ public class enemyScript : MonoBehaviour {
                 direction = -direction.normalized;
                 this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * (force.x + 10), direction.y * force.y, direction.z * (force.z + 10), ForceMode.Impulse);
                 //hitWithBat = true;
-                Debug.Log("hit by bat");
             }
             else if (collision.gameObject.tag == "Player")
             {
-                Debug.Log("hit by " + collision.gameObject.tag);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
+            }
+            else if(collision.gameObject.tag == "platform")
+            {
+                isGrounded = true;
             }
         }
 
@@ -205,6 +211,13 @@ public class enemyScript : MonoBehaviour {
             if (collision.gameObject.tag == "Player")
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            }
+            else if(collision.gameObject.tag == "bat")
+            {
+                Vector3 force = new Vector3(0, 0, 0);
+                Vector3 direction = collision.contacts[0].point - this.gameObject.transform.position;
+                direction = -direction.normalized;
+                this.gameObject.GetComponent<Rigidbody>().AddForce(direction.x * (force.x + 10), direction.y * force.y, direction.z * (force.z + 10), ForceMode.Impulse);
             }
         }
         else if(this.gameObject.tag == "platform")

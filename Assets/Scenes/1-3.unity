@@ -3723,19 +3723,19 @@ Transform:
   - {fileID: 1230851078}
   - {fileID: 235667771}
   - {fileID: 1651425624}
-  - {fileID: 1289618480}
   - {fileID: 1856960016}
   - {fileID: 1342263486}
-  - {fileID: 1956232023}
-  - {fileID: 690842176}
+  - {fileID: 1289618480}
   - {fileID: 110032456}
-  - {fileID: 1421690256}
+  - {fileID: 690842176}
+  - {fileID: 1956232023}
   - {fileID: 238375202}
   - {fileID: 1629645033}
   - {fileID: 1566699544}
   - {fileID: 598683584}
   - {fileID: 1636945185}
   - {fileID: 887708471}
+  - {fileID: 1421690256}
   - {fileID: 905122359}
   - {fileID: 75470339}
   - {fileID: 108225858}
@@ -3751,31 +3751,31 @@ Transform:
   - {fileID: 274743228}
   - {fileID: 1501714584}
   - {fileID: 157411612}
-  - {fileID: 1549726704}
   - {fileID: 646927140}
   - {fileID: 1632968668}
-  - {fileID: 518171820}
+  - {fileID: 888467556}
   - {fileID: 544086948}
   - {fileID: 1102958487}
-  - {fileID: 816439597}
-  - {fileID: 1253160352}
-  - {fileID: 904823440}
-  - {fileID: 1686313626}
-  - {fileID: 1237655293}
-  - {fileID: 1326554793}
-  - {fileID: 125436251}
-  - {fileID: 888467556}
-  - {fileID: 1351488614}
   - {fileID: 747658925}
-  - {fileID: 1901875230}
+  - {fileID: 1253160352}
+  - {fileID: 1326554793}
+  - {fileID: 904823440}
+  - {fileID: 1237655293}
+  - {fileID: 518171820}
+  - {fileID: 1549726704}
+  - {fileID: 816439597}
+  - {fileID: 1351488614}
+  - {fileID: 125436251}
   - {fileID: 82837044}
-  - {fileID: 1874290989}
+  - {fileID: 1901875230}
   - {fileID: 785996024}
-  - {fileID: 2094266686}
   - {fileID: 1647864171}
   - {fileID: 1346674764}
+  - {fileID: 2094266686}
   - {fileID: 593571761}
+  - {fileID: 1686313626}
   - {fileID: 371933387}
+  - {fileID: 1874290989}
   - {fileID: 254262581}
   - {fileID: 867700171}
   - {fileID: 1185835582}
@@ -5505,6 +5505,16 @@ Prefab:
       propertyPath: endLevel
       value: 
       objectReference: {fileID: 704787989}
+    - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
+        type: 2}
+      propertyPath: JumpForce
+      value: 1.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 114589164535877120, guid: 669dd859c02e1ba4d8b0b36b397334c0,
+        type: 2}
+      propertyPath: GravityModifier
+      value: 0.28
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 669dd859c02e1ba4d8b0b36b397334c0, type: 2}
   m_IsPrefabParent: 0
