@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4787353776132630}
   - component: {fileID: 33590505234256200}
   - component: {fileID: 23831895580114572}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightHead_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4109149234542502}
   - component: {fileID: 33806857208335334}
   - component: {fileID: 23260276754440828}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightHindge_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4989403161392944}
   - component: {fileID: 33868815275258226}
   - component: {fileID: 23637199141842778}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightBase_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4300047168118246}
   - component: {fileID: 33282334564287806}
   - component: {fileID: 23520411774430626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Left_Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 4362575796204350}
   - component: {fileID: 33286097748678476}
   - component: {fileID: 23827304097317908}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightHelmet_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4730268244313310}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Knight_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 4994761539272812}
   - component: {fileID: 33188723292268928}
   - component: {fileID: 23460446113262424}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightPt02_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 4953932400198418}
   - component: {fileID: 33976899125304124}
   - component: {fileID: 23056586538919634}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightVisor_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - component: {fileID: 4256407957173986}
   - component: {fileID: 33297779322522706}
   - component: {fileID: 23800829564530086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightPt01_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 4492247900081680}
   - component: {fileID: 33911474954881024}
   - component: {fileID: 23017243662324446}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: KnightCollar_Low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   - component: {fileID: 4725900408816522}
   - component: {fileID: 33659843868571294}
   - component: {fileID: 23022403068383420}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Right_Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
