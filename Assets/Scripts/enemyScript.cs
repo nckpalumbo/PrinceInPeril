@@ -46,10 +46,12 @@ public class enemyScript : MonoBehaviour {
         ovrScript = playerObj.GetComponent<OVRPlayerController>();
         if(currEnemy.gameObject.tag == "tallEnemy")
         {
-            GameObject.Instantiate(trapDoor, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(0, 0, 0));
-            GameObject.Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(90, 0, 0));
-            trapDoor.transform.parent = currEnemy.transform;
-            cover.transform.parent = currEnemy.transform;
+            GameObject TrapDoor = Instantiate(trapDoor, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(0, 0, 0));
+            GameObject Cover = Instantiate(cover, new Vector3(startXVal, startYVal + 4.75f, startZVal), Quaternion.Euler(90, 0, 0));
+            currEnemy.transform.parent = Cover.transform;
+            Cover.transform.parent = TrapDoor.transform;
+            //TrapDoor.transform.parent = currEnemy.transform;
+            //Cover.transform.parent = currEnemy.transform;
             iterator++;
         }
         determinePathZ();
@@ -58,7 +60,11 @@ public class enemyScript : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-
+        /*if (currEnemy.transform.tag == "tallEnemy")
+        {
+            currEnemy.transform.GetChild(12).position = new Vector3(startXVal, startYVal + 4.75f, startZVal);
+            currEnemy.transform.GetChild(13).position = new Vector3(startXVal, startYVal + 4.75f, startZVal);
+        }*/
         if (currEnemy.gameObject.tag == "shortEnemy")
         {
             if (isGrounded)
